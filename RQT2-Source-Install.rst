@@ -11,10 +11,13 @@ Clemmeys (see `REP <http://www.ros.org/reps/rep-2000.html>`_).
 - Windows 10 with Visual Studio 2017
 - Mac OSX Sierra 10.12.x
 
+*Note:* Windows 10 has limited support at the moment. The Python plugins should work but C++ is a work in progress.
+
 Other Requirements
 ~~~~~~~~~~~~~~~~~~
 
 - In ROS2 Crystal the minimum Qt version is ``Qt5``
+-
 
 Building From Source
 --------------------
@@ -23,6 +26,15 @@ In order to build RQT2 from source, first create a ROS2 workspace at ``~/ros2_ws
 This is step is already covered in building ROS2 from source instructions, so we skip it here.
 
 As of this writing (Dec 2018) you must install ROS2 from source alongside RQT2. See `Building ROS2 from source <https://index.ros.org/doc/ros2/Installation/>`_.
+
+*Note:* RQT2 has only been tested with the master branch of the ``ros2.repos`` file. It is important that while setting up your ROS2 workspace, you replace:
+
+      https://raw.githubusercontent.com/ros2/ros2/release-latest/ros2.repos
+
+with:
+
+      https://raw.githubusercontent.com/ros2/ros2/master/ros2.repos
+
 
 Download RQT2 Repositories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
